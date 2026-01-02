@@ -145,3 +145,162 @@
 
 </body>
 </html>
+=======
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accueil — APSDS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+    .fade-in { opacity: 0; transform: translateY(20px); transition: all 1s ease-out; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+<!-- NAVBAR -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-green-800">APSDS</h1>
+
+    <button id="menu-btn" class="md:hidden text-green-800">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16"/>
+      </svg>
+    </button>
+
+    <nav class="hidden md:flex space-x-8">
+      <a href="#bienvenue" class="font-semibold hover:text-green-700">Accueil</a>
+      <a href="#apropos" class="font-semibold hover:text-green-700">À propos</a>
+      <a href="#formations" class="font-semibold hover:text-green-700">Formations</a>
+      <a href="#inscription" class="font-semibold hover:text-green-700">Inscription</a>
+      <a href="#contact" class="font-semibold hover:text-green-700">Contact</a>
+    </nav>
+  </div>
+
+  <nav id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2">
+    <a href="#bienvenue" class="block">Accueil</a>
+    <a href="#apropos" class="block">À propos</a>
+    <a href="#formations" class="block">Formations</a>
+    <a href="#inscription" class="block">Inscription</a>
+    <a href="#contact" class="block">Contact</a>
+  </nav>
+</header>
+
+<!-- BIENVENUE -->
+<section id="bienvenue" class="bg-gradient-to-r from-green-200 to-[#6B8E23] py-24">
+  <div class="max-w-5xl mx-auto text-center px-4 fade-in">
+    <h2 class="text-5xl font-bold text-green-900 mb-6 animate-bounce">
+      Bienvenue à APSDS
+    </h2>
+    <p class="text-xl mb-8">
+      Académie Privée de Santé et de Développement Social<br>
+      <span class="font-semibold">Former – Soigner – Impacter</span>
+    </p>
+    <a href="#inscription" class="bg-green-700 text-white px-10 py-4 rounded-xl shadow-lg hover:scale-105 transition">
+      S’inscrire maintenant
+    </a>
+    <img src="https://images.unsplash.com/photo-1588776814546-d50be73b0941?auto=format&fit=crop&w=1200&q=80" 
+         alt="Etudiants santé" class="mx-auto mt-10 rounded-xl shadow-lg hover:scale-105 transition duration-700">
+  </div>
+</section>
+
+<!-- À PROPOS -->
+<section id="apropos" class="py-24 bg-green-50">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center fade-in">
+    <img src="https://images.unsplash.com/photo-1588776814546-d50be73b0941?auto=format&fit=crop&w=900&q=80"
+         alt="Professionnels santé" class="rounded-xl shadow-lg hover:scale-105 transition duration-500">
+    <div>
+      <h2 class="text-4xl font-bold text-green-800 mb-6">Qui sommes-nous ?</h2>
+      <p class="mb-4">
+        APSDS forme des professionnels compétents dans les domaines de la santé
+        et du développement social.
+      </p>
+      <p>
+        Notre objectif est de répondre aux besoins réels du terrain
+        avec une formation pratique, humaine et de qualité.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FORMATIONS -->
+<section id="formations" class="bg-[#EEF3E2] py-24">
+  <div class="max-w-6xl mx-auto px-4 fade-in">
+    <h2 class="text-4xl font-bold text-center text-green-800 mb-12">Nos Formations</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-2xl transition">
+        <img src="https://images.unsplash.com/photo-1588776814546-d50be73b0941?auto=format&fit=crop&w=600&q=80" 
+             alt="Vendeur pharmacie" class="rounded-xl mb-4">
+        Vendeur en pharmacie
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-2xl transition">
+        <img src="https://images.unsplash.com/photo-1588776814546-d50be73b0941?auto=format&fit=crop&w=600&q=80" 
+             alt="Agent santé" class="rounded-xl mb-4">
+        Agent de Santé de Base
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-2xl transition">
+        <img src="https://images.unsplash.com/photo-1588776814546-d50be73b0941?auto=format&fit=crop&w=600&q=80" 
+             alt="Licence professionnelle" class="rounded-xl mb-4">
+        Licences professionnelles
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSCRIPTION -->
+<section id="inscription" class="py-24 bg-green-50">
+  <div class="max-w-4xl mx-auto px-4 fade-in">
+    <h2 class="text-4xl font-bold text-green-800 text-center mb-8">Inscription</h2>
+    <form class="bg-white p-8 rounded-2xl shadow-xl space-y-5">
+      <input class="w-full border px-4 py-3 rounded-lg" placeholder="Nom et prénom">
+      <input class="w-full border px-4 py-3 rounded-lg" placeholder="Email">
+      <input class="w-full border px-4 py-3 rounded-lg" placeholder="Téléphone">
+      <select class="w-full border px-4 py-3 rounded-lg">
+        <option>Choisir une formation</option>
+        <option>Vendeur en pharmacie</option>
+        <option>Agent de Santé de Base</option>
+        <option>Licence</option>
+      </select>
+      <button class="w-full bg-green-700 text-white py-4 rounded-xl hover:bg-green-800 transition">
+        Envoyer la demande
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 bg-green-100 text-center fade-in">
+  <h2 class="text-4xl font-bold text-green-800 mb-6">Contact</h2>
+  <p>Zinder – Niger</p>
+  <p>📞 +227 98 57 70 67 / +227 80 52 74 14</p>
+</section>
+
+<footer class="bg-[#6B8E23] text-white py-6 text-center">
+  © 2025 APSDS — Tous droits réservés
+</footer>
+
+<script>
+const faders = document.querySelectorAll('.fade-in');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+});
+faders.forEach(el => observer.observe(el));
+
+document.getElementById('menu-btn').onclick = () =>
+  document.getElementById('mobile-menu').classList.toggle('hidden');
+</script>
+
+</body>
+</html>
+>>>>>>> 1eab57b (Ton message de commit ici)
